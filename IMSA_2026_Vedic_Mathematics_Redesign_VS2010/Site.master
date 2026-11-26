@@ -1,0 +1,73 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server">
+            IMSA International Conference 2026</asp:ContentPlaceHolder>
+    </title>
+    <link href="Content/site.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/site.js" type="text/javascript"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <header class="site-header">
+  <div class="topline">
+    <div class="container topflex">
+      <span>INTERNATIONAL CONFERENCE 2026</span>
+      <span>5–7 DECEMBER 2026 · HYBRID · PATNA</span>
+    </div>
+  </div>
+  <div class="brandbar container">
+    <a class="brand" href="Default.aspx">
+      <img src="Images/image1.jpeg" alt="IMSA" />
+      <span><strong>IMSA</strong><small>Indian Mathematics &amp; Science Association</small></span>
+    </a>
+    <button type="button" class="nav-toggle" onclick="toggleNav()">☰</button>
+    <nav id="mainNav">
+      <a href="Default.aspx">Home</a>
+      <a href="About.aspx">About</a>
+      <a href="Theme.aspx">Theme</a>
+      <a href="Speakers.aspx">Speakers</a>
+      <a href="Committee.aspx">Committees</a>
+      <a href="Programme.aspx">Programme</a>
+      <a href="Registration.aspx">Registration</a>
+      <a href="Venue.aspx">Venue</a>
+      <a href="Contact.aspx">Contact</a>
+      <a class="nav-cta" href="Registration.aspx">Register</a>
+    </nav>
+  </div>
+</header>
+    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+    <footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <img class="footer-logo" src="Images/image1.jpeg" alt="IMSA" />
+      <h3>Indian Mathematics &amp; Science Association</h3>
+      <p>International Conference 2026<br />Emerging Trends in Vedic Mathematics and Science in the Indian Knowledge System</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="Theme.aspx">Conference Theme</a>
+      <a href="Speakers.aspx">Speakers</a>
+      <a href="Committee.aspx">Organizing Committee</a>
+      <a href="Registration.aspx">Registration</a>
+      <a href="Venue.aspx">Venue</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>Mobile: 9835057735</p>
+      <p>Email: imsaofficials@gmail.com</p>
+      <p>Aryabhatta Knowledge University, Patna, Bihar, India</p>
+      <a href="Documents/Brochure-ICEVTM-2026.pdf" target="_blank">Download Brochure ↗</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 IMSA · Conference website redesign based on the supplied conference brochure.</div>
+</footer>
+    </form>
+</body>
+</html>
